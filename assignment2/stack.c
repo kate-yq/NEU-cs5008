@@ -47,13 +47,13 @@ bool isValid(char* s){
             if (temp == ' '){
                 return false;
             }
-            if (temp == ')' && s[i] != '('){
+            if (temp == '(' && s[i] != ')'){
                 return false;
             }
-            if (temp == ']' && s[i] != '['){
+            if (temp == '[' && s[i] != ']'){
                 return false;
             }
-            if (temp == '}' && s[i] != '{'){
+            if (temp == '{' && s[i] != '}'){
                 return false;
             }
         }
