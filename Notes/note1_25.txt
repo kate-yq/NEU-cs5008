@@ -1,0 +1,42 @@
+1. Algorithms - as short as possible
+    memory is very important in c
+    time: runtime
+    space: memory space
+    power: 电压*电流
+
+2. Linked List: Node {val, pointer(store address of next Node)}
+
+3. !!! Malloc/Free:
+    veriables in system stack: decalred in a scope and popped off when
+    exit. (Like the concept: stack overflow)
+    New data items created at runtime use memory in the system "Heap"
+    when running dynamically, i.e. recursion
+    equivalent to "new" in other languages, but lower level
+    these data does not go away when the stack is popped
+    (Like a scratch paper)
+
+    malloc is a function to ask for memory
+    int* newInt = (int*)malloc(sizeof(int));
+
+    after done:
+    free(newInt); //release memory no longer need
+
+    memory leak: 
+    1) too many memory used so that exceed the system capacity
+    2) hanging location, not defined but will be used as a whole
+
+    int* newArray = (int*)malloc(4*sizeof(int));
+
+    pass by reference: not changing the parameter, but changed the
+        parameter(pointer)'s pointing address
+    pass by value: pass in a deep copy of the parameter's value
+
+
+
+
+
+*. Mark: are there primitive type and reference type in c?
+    are all reference type pointers?
+
+
+

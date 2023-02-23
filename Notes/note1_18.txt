@@ -1,0 +1,34 @@
+Introduction to C
+1. declare verible:
+    type, size, name
+2. initialization:
+    assign a value to a veriable for the first time
+3. scanf() - an input method, == input() in Python
+    scanf("%d", &i); & means get the memory address of i
+4. char can be 'x' or '45' 
+5. const == final in Java
+
+*********************************************
+6. address in memory is called pointer
+7. pointer is a C data type
+    declare pointer:   int* y = &x;
+    add the *
+    &x --> get the address of x
+    y will have the value of x, but if x change, y will also change
+    in other words, the value of y is x
+
+
+8. library
+
+9. structs (structures)
+    == class in Java
+    typedef struct Student{
+        int age;
+        int id;
+        char campus;
+    } Student_type;
+    Student_type s1; // declare a veriable of type Student
+
+
+10. stacks - LIFO
+    

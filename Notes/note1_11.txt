@@ -1,0 +1,36 @@
+Computer System
+1. current computer: 64-bit
+    for better performance
+2. text editors: vim nano emacs // need to research how to use
+3. IDE: special text editor that understand what you're writing
+    Xcode - c complier // gcc might need install
+    Homebrew - brew install gcc ...
+
+4. install gcc - sudo apt install build-essential
+5. gcc vs clang   -- 2 compliers, minor differences
+
+****
+5. command line of compile c program:
+    gcc filename.c -o outcomefilename   // compile
+    ./outcomefilename   // run the compiled file
+****
+
+6. assembly code: base level code that computer can understand
+   object file: hexa location of funciton in assembly code
+
+7. I/O: I/O bus - several controllers
+        I/O bridge - connect memory, bus, CPU
+
+8. motherboard: 主板
+9. operating system: Mac / Windows / Linux
+    -- source manager & allocator, decides between conflicting requests
+    -- control program, control execution & prevent errors and improper use
+
+
+10. memory: lots of types
+    each data type has its own memory requirements
+
+
+
+************************************
+khoury cloud password: kateYQ@970710

@@ -1,0 +1,16 @@
+1. algorithms
+2. sort - quadratic:
+    bubble sort - for each element, compare it against the later
+                    one, switch if it is larger
+    selection sort - find the smallest element, and put it in front
+    insertion sort - make first x element sorted, then add new 
+                    elememnt to the sorted part
+
+3. gcc debug
+gcc -g xxx.c
+gdb a.out
+b main
+run
+next
+step
+disass - show assembly

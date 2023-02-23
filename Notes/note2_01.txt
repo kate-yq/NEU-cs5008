@@ -1,0 +1,19 @@
+1. .c -> .i -> .o -> .out
+
+2. 0x means start&hexadecimal
+
+3. assembly code:
+    mov src dest
+    movb -- 1 byte
+    movw -- 2 bytes
+    movl -- 32bits/4bytes
+    movq -- 64bits/8bytes
+    movs -- 4 bytes (only float)
+    movd -- 8 bytes (only double)
+    movt -- 16 bytes (only long double)
+
+4. %rbp is a pointer, () is to dereference
+    
+5. cmpq: condition
+    jne: jump be taken if the previous comparision are not equal
+    ne here means not equal
