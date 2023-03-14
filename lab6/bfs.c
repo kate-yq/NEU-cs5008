@@ -28,8 +28,8 @@ void delete(node* root){
 // contains only the necessary methods
 
 typedef struct queue {
-    // 0 is head, 99 is end
-    node* ary[100];
+    // 0 is head, 20 is end
+    node* ary[20];
     int size;
 }queue;
 
