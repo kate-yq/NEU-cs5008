@@ -4,7 +4,7 @@
 void singleProbe(int element, int* arr, int size){
     int key = element % size;
     int attempt = 1;
-    while (arr[key] != 0){
+    while (arr[key] != -1){
         key = (key+1) % size;
         attempt++;
         if(attempt > size+1){
@@ -18,7 +18,7 @@ void singleProbe(int element, int* arr, int size){
 void quadraticProbe(int element, int* arr, int size){
     int key = element % size;
     int attempt = 1;
-    while(arr[key] != 0){
+    while(arr[key] != -1){
         key = (key + attempt*attempt) % size;
         attempt++;
         if (attempt > size*2){
@@ -34,7 +34,7 @@ void doubleHash(int element, int* arr, int size){
     int h2 = 7 - (element % 7);
     int key = (h1 + h2) % size;
     int attempt = 1;
-    while(arr[key] != 0){
+    while(arr[key] != -1){
         key = (h1 + attempt*h2) % size;
         attempt++;
         if (attempt > size*2){
@@ -65,7 +65,7 @@ int main(){
 
     int i;
     for (i = 0; i<size; i++){
-        hashmap[i] = 0;
+        hashmap[i] = -1;
     }
 
 
@@ -87,7 +87,7 @@ int main(){
     }
 
     for (i=0; i<size; i++){
-        if (hashmap[i] != 0){
+        if (hashmap[i] != -1){
             printf("%d ", hashmap[i]);
         } else {
             printf("NULL ");
