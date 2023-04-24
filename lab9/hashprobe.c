@@ -19,7 +19,7 @@ void quadraticProbe(int element, int* arr, int size){
     int key = element % size;
     int attempt = 1;
     while(arr[key] != -1){
-        key = (key + attempt*attempt) % size;
+        key = (element + attempt*attempt) % size;
         attempt++;
         if (attempt > size*2){
             printf("no empty space or fill in infinite loop");
@@ -32,7 +32,7 @@ void quadraticProbe(int element, int* arr, int size){
 void doubleHash(int element, int* arr, int size){
     int h1 = element % size;
     int h2 = 7 - (element % 7);
-    int key = (h1 + h2) % size;
+    int key = h1 % size;
     int attempt = 1;
     while(arr[key] != -1){
         key = (h1 + attempt*h2) % size;
